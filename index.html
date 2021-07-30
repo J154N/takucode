@@ -5,30 +5,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
-    <title>지상의 홈피♥</title>
+    <link rel="stylesheet" href="https://unpkg.com/98.css" />
+    <title>가입하세요.</title>
 </head>
 <style>
-    @font-face {
-        font-family: 'DungGeunMo';
-        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff');
-        font-weight: normal;
-        font-style: normal;
-    }
-
-    @font-face {
-        font-family: '美咲ゴシック';
-        src: url('https://cdn.leafscape.be/misaki/misaki_gothic_web.woff2') format("woff2");
-    }
-
     a {
         text-decoration: none;
         font: black;
     }
 
     body {
-        background-color: white;
+        background-color: #dfdfdf;
         font: black;
+
     }
 
     .middle {
@@ -36,18 +25,34 @@
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
-        text-align: center;
-        font-family: "DungGeunMo", 美咲ゴシック;
         line-height: 170%;
+        
     }
 </style>
 
 <body>
     <div class="middle">
-    <div class="nes-container is-rounded is-dark">
-        <p>Kengo Love...</p>
-    </div>
-    </div>
+        <div class="window" style="margin: 32px; width: 250px">
+            <div class="title-bar">
+                <div class="title-bar-text">
+                    수요조사에 참가하세요.
+                </div>
+            </div>
+            <div class="window-body">
+                <p>안녕하세요. <br> 비쥬얼 노벨 만들기 스터디 수요조사에 참여해주세요.</p>
+                <section class="field-row" style="justify-content: flex-end">
+                    <button onclick="fn_ok()">OK</button>
+                    <button onclick="fn_no()">Cancel</button>
+                </section>
+            </div>
 </body>
+<script>
+    function fn_ok() {
+        location.href = "/index_2.html";
+    }
 
+    function fn_no() {
+        window.close();
+    }
+</script>
 </html>

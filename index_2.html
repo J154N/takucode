@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="UTF-8">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/98.css" />
+    <title>가입하세요.</title>
+</head>
+<style>
+    a {
+        text-decoration: none;
+        font: black;
+    }
+
+    body {
+        background-color: #dfdfdf;
+        font: black;
+
+    }
+
+    .middle {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        line-height: 170%;
+
+    }
+</style>
+
+<body>
+    <div class="middle">
+        <div class="window" style="margin: 32px; width: 250px">
+            <div class="title-bar">
+                <div class="title-bar-text">
+                    감사합니다.
+                </div>
+            </div>
+            <div class="window-body">
+                <p>설문지로 가시겠어요? <br> 렌파이 설명문을 읽으시겠어요?</p>
+                <section class="field-row" style="justify-content: flex-end">
+                    <button onclick="fn_form()">Form</button>
+                    <button onclick="fn_blog()">Blog</button>
+                </section>
+            </div>
+        </div>
+    </div>
+    <div class="window" style="width: 300px; left: 30%; top:30%; position: absolute;">
+        <div class="title-bar">
+            <div class="title-bar-text">Blog 클릭 시 설명문으로 이동합니다.</div>
+            <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+                <button aria-label="Maximize"></button>
+                <button aria-label="Close"></button>
+            </div>
+        </div>
+        <div class="window-body">
+            <p>비밀번호는 jisan 입니다.</p>
+        </div>
+    </div>
+    <div class="window" style="width: 300px; left: 60%; top: 60%; position: absolute;">
+        <div class="title-bar">
+            <div class="title-bar-text">렌파이란?</div>
+            <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+                <button aria-label="Maximize"></button>
+                <button aria-label="Close"></button>
+            </div>
+        </div>
+        <div class="window-body">
+            <a href="https://ko.wikipedia.org/wiki/%EB%A0%8C%27%ED%8C%8C%EC%9D%B4">바로가기</a>
+        </div>
+    </div>
+</body>
+<script>
+    function fn_form() {
+        location.href = "https://forms.gle/Bk6YugdSXU8agzhH8";
+    }
+
+    function fn_blog() {
+        // https://garden-of-everything.tistory.com/
+
+        location.href = "https://garden-of-everything.tistory.com/";
+    }
+</script>
+
+</html>
